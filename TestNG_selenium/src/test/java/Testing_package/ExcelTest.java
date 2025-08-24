@@ -6,6 +6,8 @@ import java.io.IOException;
 import org.apache.poi.sl.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +18,7 @@ public class ExcelTest {
 
     @DataProvider(name = "excelData")
     public Object[][] excelDataProvider() throws IOException {
-        String excelpath = "C:\\Users\\HP\\OneDrive\\Desktop\\Excel Files";
+        String excelpath = "C:\\Users\\HP\\OneDrive\\Desktop\\Excel Files\\TestData.xlsx";
         String sheetname = "Sheet1";
         FileInputStream fis = new FileInputStream(excelpath);
         Workbook workbook = WorkbookFactory.create(fis);
