@@ -1,0 +1,7 @@
+<suite name="Maven_project">
+<test name="Maven_project">
+<classes>
+<class name="Sarthik_clinic.HospitalManagementTest"/>
+</classes>
+</test>
+</suite>
